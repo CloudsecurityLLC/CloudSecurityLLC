@@ -1972,9 +1972,9 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Logo styling - Taille 80px */
+/* Logo styling - Taille 100px */
 .logo-img {
-  height: 80px;        /* Logo principal à 80px */
+  height: 100px;       /* Logo principal à 100px */
   width: auto;
   transition: transform var(--duration-fast) var(--ease-standard);
 }
@@ -1983,35 +1983,26 @@ html {
   transform: scale(1.05);
 }
 
-.brand-link {
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-}
-
 /* Logo dans le footer */
 .footer .logo-img {
-  height: 64px;        /* Footer à 64px */
+  height: 72px;        /* Footer à 72px */
   margin-bottom: 12px;
 }
 
-/* Ajustements responsives pour le logo 80px */
+/* Ajustements responsives */
 @media (max-width: 768px) {
   .logo-img {
-    height: 68px;      /* Mobile à 68px */
-  }
-  
-  .footer .logo-img {
-    height: 52px;      /* Footer mobile à 52px */
+    height: 80px;      /* Mobile à 80px */
   }
 }
 
 @media (max-width: 480px) {
   .logo-img {
-    height: 60px;      /* Très petits écrans à 60px */
+    height: 70px;      /* Très petits écrans à 70px */
   }
-  
-  .footer .logo-img {
-    height: 46px;      /* Footer très petits écrans à 46px */
-  }
+}
+
+/* Ajuster la navbar pour le gros logo */
+.navbar {
+  min-height: 120px;   /* Hauteur navbar augmentée */
 }
