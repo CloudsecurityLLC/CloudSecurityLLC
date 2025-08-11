@@ -1971,3 +1971,18 @@ select.form-control {
 html {
   scroll-behavior: smooth;
 }
+
+/* Logo styling */
+.logo-img {
+  height: 48px;
+  width: auto;
+  transition: transform var(--duration-fast) var(--ease-standard);
+}
+
+.logo-img:hover {
+  transform: scale(1.05);
+}
+
+.brand-link {
+  text-decoration: none;
+}
