@@ -1972,9 +1972,9 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Logo styling */
+/* Logo styling - Taille 72px */
 .logo-img {
-  height: 48px;
+  height: 72px;        /* Logo principal à 72px */
   width: auto;
   transition: transform var(--duration-fast) var(--ease-standard);
 }
@@ -1985,4 +1985,33 @@ html {
 
 .brand-link {
   text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+/* Logo dans le footer */
+.footer .logo-img {
+  height: 56px;        /* Footer à 56px */
+  margin-bottom: 12px;
+}
+
+/* Ajustements responsives pour le logo 72px */
+@media (max-width: 768px) {
+  .logo-img {
+    height: 64px;      /* Mobile à 64px */
+  }
+  
+  .footer .logo-img {
+    height: 48px;      /* Footer mobile à 48px */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-img {
+    height: 56px;      /* Très petits écrans à 56px */
+  }
+  
+  .footer .logo-img {
+    height: 42px;      /* Footer très petits écrans à 42px */
+  }
 }
