@@ -1971,3 +1971,12 @@ select.form-control {
 html {
   scroll-behavior: smooth;
 }
+
+.footer a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  font-size: var(--font-size-sm);
+}
+.footer a:hover {
+  color: var(--color-primary-hover);
+}
